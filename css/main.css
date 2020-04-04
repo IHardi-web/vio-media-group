@@ -59,4 +59,103 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
+
+body {
+  font-size: 18px;
+  color: #222;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/header-bg.png") center/cover no-repeat;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;
+  color: #fff;
+  line-height: 120%;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #3366CC;
+}
+
+.navbar .navbar-brand:hover.navbar-hover:after {
+  opacity: 1;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 15px;
+  font-size: 24px;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #3366CC;
+}
+
+.navbar-nav .nav-link:hover.navbar-hover:after {
+  opacity: 1;
+}
+
+.navbar-hover {
+  position: relative;
+}
+
+.navbar-hover:after {
+  content: "";
+  display: block;
+  background: #3366CC;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
 /*# sourceMappingURL=main.css.map */
