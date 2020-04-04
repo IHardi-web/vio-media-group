@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+    .about-img-wrapper {
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .about-img-wrapper {
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: $fz-title;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .header h1 {
+        font-size: 48px;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .header h1 {
+        font-size: $fz-card-title;
+    }
+}

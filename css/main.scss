@@ -1,4 +1,3 @@
-// Files
 @import "_reset";
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@700&display=swap');
@@ -8,6 +7,7 @@ $c-black: #000;
 $c-white: #fff;
 $c-grey: #222;
 $c-grey-light: #333;
+$c-section-grey: rgba(187, 187, 187, 0.3);
 $c-primary-dark: #003399;
 $c-primary-darker: #000033;
 $c-primary: #3366CC;
@@ -26,12 +26,26 @@ $fz-small: 14px;
     box-shadow: -2px 3px 15px rgba(51, 102, 204, 0.55);
 }
 
+@mixin heading-bg {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 body {
     font-size: $fz-text;
     color: $c-grey;
     background: $c-white;
     font-family: 'Montserrat', sans-serif
+}
+
+
+.text {
+    font-size: $fz-section-text;
+    line-height: 27px;
 }
 
 
@@ -59,6 +73,7 @@ body {
     text-transform: uppercase;
     justify-self: center;
 }
+
 
 
 .navbar {
@@ -135,3 +150,51 @@ body {
         text-align: center;
     }
 }
+
+
+
+.section {
+    padding-bottom: 150px;
+
+   &-grey {
+       background: $c-section-grey;
+   }
+}
+
+.section-heading {
+    font-size: $fz-title;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $c-white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about-us {
+    background: url("../img/s1-bg.png") fixed;
+    @include heading-bg;
+}
+
+.about-img-wrapper {
+
+    img {
+        height: 460px;
+        @include card-block();
+        border-radius: 15px 0px 0px 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "_responsive";
