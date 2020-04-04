@@ -44,7 +44,7 @@ body {
 .header-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 100vh;
 }
 
@@ -83,7 +83,7 @@ body {
 
 .navbar-nav {
     .nav-link {
-        margin: 0 15px;
+        margin-left: 15px;
         font-size: 24px;
         color: $c-white;
         transition: .2s;
@@ -112,4 +112,26 @@ body {
         opacity: 0;
         transition: .3s;
     };
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+
+    &-text {
+        font-size: $fz-small;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $c-white;
+        background: none;
+        margin-bottom: 10px;
+    }
+
+    &-arrow {
+        text-align: center;
+    }
 }
