@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/header-bg.png") center / cover no-repeat;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fz-big;
+    color: $c-white;
+    line-height: 120%;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-self: center;
+}
+
+.learn-more {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+
+    &-text {
+        font-size: $fz-small;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $c-white;
+        background: none;
+        margin-bottom: 10px;
+    }
+
+    &-arrow {
+        text-align: center;
+    }
+}
