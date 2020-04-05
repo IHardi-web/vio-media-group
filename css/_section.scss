@@ -26,3 +26,29 @@
 .section-content {
     margin-top: 60px;
 }
+
+
+#about-us {
+    background: url("../img/s1-bg.png");
+    @include heading-bg;
+}
+
+#what-we-do {
+    background: url("../img/s2-bg.png");
+    @include heading-bg;
+}
+
+#why-us {
+    background: url("../img/s4-bg.png");
+    @include heading-bg;
+}
+
+#why-different {
+    background: url("../img/s5-bg.png");
+    @include heading-bg;
+}
+
+#contacts {
+    background: url("../img/s6-bg.png");
+    @include heading-bg;
+}

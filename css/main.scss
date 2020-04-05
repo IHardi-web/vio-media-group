@@ -66,30 +66,6 @@ button:focus {
 @import "_section";
 
 
-#about-us {
-    background: url("../img/s1-bg.png");
-    @include heading-bg;
-}
-
-#what-we-do {
-    background: url("../img/s2-bg.png");
-    @include heading-bg;
-}
-
-#why-us {
-    background: url("../img/s4-bg.png");
-    @include heading-bg;
-}
-
-#why-different {
-    background: url("../img/s5-bg.png");
-    @include heading-bg;
-}
-
-#contacts {
-    background: url("../img/s6-bg.png");
-    @include heading-bg;
-}
 
 .about-img-wrapper {
     img {
@@ -100,7 +76,6 @@ button:focus {
     }
     
 }
-
 
 
 .list {
