@@ -15,6 +15,7 @@ $c-primary: #3366CC;
 
 $fz-big: 72px;
 $fz-title: 64px;
+$fz-full-width-card-title: 48px;
 $fz-subtitle: 30px;
 $fz-card-title: 36px;
 $fz-section-text: 24px;
@@ -33,6 +34,7 @@ $fz-small: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 
@@ -57,7 +59,9 @@ button:focus {
 
 @import "_header";
 
+@import "_carousel";
 
+@import "_cards";
 
 
 .section {
@@ -90,17 +94,27 @@ button:focus {
 }
 
 #about-us {
-    background: url("../img/s1-bg.png") fixed;
+    background: url("../img/s1-bg.png");
     @include heading-bg;
 }
 
 #what-we-do {
-    background: url("../img/s2-bg.png") fixed;
+    background: url("../img/s2-bg.png");
     @include heading-bg;
 }
 
 #why-us {
-    background: url("../img/s4-bg.png") fixed;
+    background: url("../img/s4-bg.png");
+    @include heading-bg;
+}
+
+#why-different {
+    background: url("../img/s5-bg.png");
+    @include heading-bg;
+}
+
+#contacts {
+    background: url("../img/s6-bg.png");
     @include heading-bg;
 }
 
@@ -114,33 +128,7 @@ button:focus {
     
 }
 
-.cards-block {
-    display: flex;
-}
 
-.card {
-    @include card-block();
-    padding: 20px;
-    height: 100%;
-
-    .card-title {
-        display: flex;
-        align-items: center;
-
-        font-size: $fz-card-title;
-        font-weight: 700;
-        color: $c-primary-dark;
-    }
-
-    .card-title-img {
-        margin-right: 15px;
-
-        img {
-            width: 64px;
-            height: 64px;
-        }
-    }
-}
 
 .list {
     margin-top: 25px;
@@ -151,6 +139,8 @@ button:focus {
         margin-bottom: 20px;
         img {
             margin-right: 15px;
+            width: 24px;
+            height: 24px;
         }
 
         &:last-child {
@@ -159,39 +149,6 @@ button:focus {
     }
 }
 
-.owl-carousel {
-    width: 100%;
-    text-align: center;
-}
-
-.carousel-img-wrapper {
-    width: 128px;
-    height: 128px;
-    padding: 15px;
-    margin: auto;
-}
-
-.owl-dots {
-    .owl-dot {
-        border: 1px solid $c-primary !important;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin: 0 5px;
-
-    }
-    .active {
-        background:$c-primary !important;
-    }
-
-}
-
-.carousel-title {
-    margin: 50px 0;
-    font-size: $fz-card-title;
-    font-weight: 700;
-    text-align: center;
-}
 
 
 

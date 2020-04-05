@@ -1,8 +1,8 @@
-
-
 $(document).ready(function () {
+    // Start animations
     AOS.init();
 
+    // Carousel
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: true,
@@ -21,5 +21,15 @@ $(document).ready(function () {
                 items: 4,
             }
         }
-    })
+    });
+
+    // Navbar scroll
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 1000) {
+            $(".navbar").addClass(" fixed-top bg-dark");
+        }
+        else {
+            $(".navbar").removeClass(" fixed-top bg-dark");
+        }
+    });
 });
