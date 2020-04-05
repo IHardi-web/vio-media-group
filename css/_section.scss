@@ -1,0 +1,28 @@
+.section {
+    padding-bottom: 150px;
+
+    &-grey {
+        padding-bottom: 150px;
+        background: $c-section-grey;
+    }
+}
+
+.section-heading {
+    font-size: $fz-title;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $c-white;
+    text-align: center;
+    
+}
+
+.section-subtitle {
+    font-size: $fz-subtitle;
+    line-height: 34px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.section-content {
+    margin-top: 60px;
+}
