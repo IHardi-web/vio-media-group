@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     // Navbar scroll
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 1000) {
+        if ($(window).scrollTop() > 600) {
             $(".navbar").addClass(" fixed-top bg-dark");
         }
         else {

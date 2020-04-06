@@ -37,12 +37,15 @@ $fz-small: 14px;
     background-attachment: fixed;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: $fz-text;
     color: $c-grey;
     background: $c-white;
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
 }
 
 button:focus {
