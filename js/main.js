@@ -1,6 +1,12 @@
 $(document).ready(function () {
     // Start animations
-    AOS.init();
+    $(function () {
+        AOS.init({
+            duration: 1200,
+        });
+    });
+
+    $(".section-heading span").attr("data-aos", "zoom-in");
 
     // Carousel
     $('.owl-carousel').owlCarousel({

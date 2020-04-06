@@ -4,10 +4,17 @@
 }
 
 .carousel-img-wrapper {
-    width: 128px;
-    height: 128px;
-    padding: 15px;
+    img {
+        min-width: 114px;
+        min-height: 96px;
+    }
+
+    padding: 10px;
+    max-width: 128px;
+    max-height: 148px;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .owl-dots {
