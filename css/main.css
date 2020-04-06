@@ -425,6 +425,12 @@ button:focus {
 .owl-carousel {
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carousel-img-wrapper {
@@ -435,9 +441,8 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .carousel-img-wrapper img {
