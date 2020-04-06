@@ -249,11 +249,10 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
-
-        <div class="section-grey">
+        <!-- Section why we are different -->
+        <section class="section-grey">
             <div class="section-heading" id="why-different">Why we are different</div>
 
             <div class="container">
@@ -320,10 +319,74 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- Section contact us -->
+        <section class="section">
+            <div class="section-heading" id="contacts">Contact us</div>
+            <div class="row container m-auto">
+                <div class="section-subtitle col-lg-10 col-12">
+                    If you would like to partner with us, fill out the form below and one of our staff members will
+                    get back to you.
+                </div>
+            </div>
 
+            <div class="container">
+                <div class="section-content">
+                    <form action="send_form_email.php" method="post" class="input-block">
+                        <div class="row">
+
+                            <div class="col-md-6 col-12">
+                                Firstname *<input type="text" name="firstname" id="input-firstname" required
+                                    placeholder="Enter your firstname">
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                Lastname *<input type="text" name="lastname" id="input-name" required
+                                    placeholder="Enter your lastname">
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                Email address *<input type="email" name="email" id="input-name" required
+                                    placeholder="Enter your email address">
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                Organization name *<input type="text" name="organization" id="input-name" required
+                                    placeholder="Enter organization name">
+                            </div>
+
+                            <div class="col-12">
+                                Comments (optional)
+                                <textarea id="textarea" name="comments" placeholder="Enter your comments"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" class="button">
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="m-auto d-flex flex-row">
+                    <a href="mailto:info@viomediagroup.net" class="footer-link">
+                        <img src="svg/email.svg" alt=""> info@viomediagroup.net
+                    </a>
+
+                    <a href="tel:857-264-0043" class="footer-link">
+                        <img src="svg/phone.svg" alt=""> 857-264-0043
+                    </a>
+                </div>
+
+                <div class="m-auto">
+                    <div class="footer-city">Boston</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

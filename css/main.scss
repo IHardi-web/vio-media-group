@@ -98,17 +98,68 @@ button:focus {
 }
 
 
+.input-block  {
+    font-size: 24px;
+
+    input, textarea {
+        font-size: 14px;
+        border: 2px solid $c-primary;
+        border-radius: 5px;
+        display: block;
+        padding: 15px;
+        width: inherit;
+        margin: 10px 0;
+    }
+
+    textarea {
+        height: 200px;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    display: block;
+    background: $c-white;
+    font-size: $fz-text;
+    color: $c-primary-dark;
+    font-weight: 600;
+    transition: .5s;
+
+    &:hover {
+        background: $c-primary;
+        color: $c-white;
+    }
+}
 
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    background: $c-primary-darker;
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        a {
+            display: flex;
+            align-items: center;
+            color: $c-white;
+            margin: 25px;
 
+            img {
+                margin-right: 20px;
+            }
+        }
 
-
-
-
-
-
-
-
+        .footer-city {
+            font-size: $fz-section-text;
+            color: #ccc;
+            font-weight: 500;
+        }
+    }
+}
 
 
 

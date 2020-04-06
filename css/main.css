@@ -715,6 +715,86 @@ button:focus {
   margin: 0;
 }
 
+.input-block {
+  font-size: 24px;
+}
+
+.input-block input, .input-block textarea {
+  font-size: 14px;
+  border: 2px solid #3366CC;
+  border-radius: 5px;
+  display: block;
+  padding: 15px;
+  width: inherit;
+  margin: 10px 0;
+}
+
+.input-block textarea {
+  height: 200px;
+}
+
+.button {
+  padding: 10px 20px;
+  display: block;
+  background: #fff;
+  font-size: 18px;
+  color: #003399;
+  font-weight: 600;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.button:hover {
+  background: #3366CC;
+  color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  background: #000033;
+}
+
+.footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 25px;
+}
+
+.footer .footer-content a img {
+  margin-right: 20px;
+}
+
+.footer .footer-content .footer-city {
+  font-size: 24px;
+  color: #ccc;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1200px) {
   .about-img-wrapper img {
     width: 100%;
